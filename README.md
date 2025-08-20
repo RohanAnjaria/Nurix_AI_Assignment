@@ -21,3 +21,20 @@ npm install -g ngrok
 
 ngrok http 3000
 ```
+6. Create a .env file. We will store our environment variables here
+
+   Set the values of the following variables accordingly
+
+   ```
+    HUBSPOT_TOKEN={token for your HubSpot private app}
+
+    HUBSPOT_OWNER_EMAIL={email id of the contact owner}
+
+    WEBHOOK_SITE_URL={webhook.site URL where the payload for Assignment 1 is to be delivered}
+
+    PORT={Port where your local backend server will run}
+
+    HUBSPOT_OWNER_ID={Contact owner id of contact owner}
+
+    CONTACT_ID={Contact ID of the contact to be updated in part 3 of Assignment 2}
+   ```
