@@ -33,8 +33,46 @@ ngrok http 3000
     WEBHOOK_SITE_URL={webhook.site URL where the payload for Assignment 1 is to be delivered}
 
     PORT={Port where your local backend server will run}
-
+ 
     HUBSPOT_OWNER_ID={Contact owner id of contact owner}
 
     CONTACT_ID={Contact ID of the contact to be updated in part 3 of Assignment 2}
    ```
+7. Create an event subscription Contact.propertyChange for your HubSpot app to detect changes in contact owner
+8. Setup an external webhook on webhook.site to send Candidate_name and Candidate_number payload in JSON format. The URL we are using is : https://webhook.site/f3182416-f9c7-4f14-968d-70f52de82057
+9. For Assignment 1 we need to run express.js as follows:
+    
+
+```
+npm init -y
+
+npm install express axios body-parser dotenv
+
+node express.js
+```
+
+---
+
+## Assignment 2
+
+1. Part 1 : Create Custom Properties for the Contact object
+
+Run the command
+```
+node scripts\create_properties.js
+```
+
+2. Part 2 : Contact Creation
+
+Run the command
+```
+node scripts\create_contact.js
+```
+Note the CONTACT_ID of the contact created from the log in the console. This will be useful in part 3 and we can update .env accordingly.
+
+3. Part 3 : API Update
+
+Run the command
+```
+node scripts\update_contact.js
+```
