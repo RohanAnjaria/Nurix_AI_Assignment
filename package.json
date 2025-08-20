@@ -1,0 +1,22 @@
+{
+  "name": "hubspot-backend-integration-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "create:properties": "node scripts/create_properties.js",
+    "owners": "node scripts/get_owners.js",
+    "create:contact": "node scripts/create_contact.js",
+    "update:contact": "node scripts/update_contact.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  },
+  "description": "This repo contains: - **Assignment 1:** A HubSpot Workflow that triggers a **Webhook (POST JSON)** to a `webhook.site` URL whenever a Contact Owner is **assigned or updated**. - **Assignment 2:** **Node.js** scripts that create custom contact properties via API, create a contact assigned to a specific owner with those properties, and update an existing contact.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
