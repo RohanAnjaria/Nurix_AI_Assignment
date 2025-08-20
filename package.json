@@ -15,7 +15,7 @@
     "express": "^5.1.0"
   },
   "description": "This repo contains: - **Assignment 1:** A HubSpot Workflow that triggers a **Webhook (POST JSON)** to a `webhook.site` URL whenever a Contact Owner is **assigned or updated**. - **Assignment 2:** **Node.js** scripts that create custom contact properties via API, create a contact assigned to a specific owner with those properties, and update an existing contact.",
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
